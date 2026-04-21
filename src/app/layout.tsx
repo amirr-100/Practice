@@ -22,9 +22,6 @@ export default function RootLayout({
 
         </header>
           {children}
-        
-
-        
 
         <footer
         style={{

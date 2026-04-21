@@ -1,5 +1,5 @@
 import Link from "next/link";
-
+import { usePathname } from "next/navigation";
 const navlinks=[
   {name : "Login", href: "/login"},
   {name : "Register", href : "/register"},
@@ -12,6 +12,7 @@ export default function AuthLayout({
 }: {
   children: React.ReactNode;
 }) {
+  const pathname = usePathname();
   return (
     <html lang="en">
       <body>
